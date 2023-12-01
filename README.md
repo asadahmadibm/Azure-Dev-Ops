@@ -15,6 +15,7 @@
     copy repo link
     make directory in local
     cmd : git clone Linkaddress
+    cmd : dotnet new sln --name ifb.FirstProject
     open vs
     new class library
     push
