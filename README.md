@@ -43,5 +43,10 @@
         6- for build that project by this .net : add task  powershell -> set to inline copy $(Agent.HomeDirectory)\dotnet-sdk-8.0.100-win-x64\dotnet.exe build "$(Build.SourcesDirectory)\ClassLibrary1\ClassLibrary1.csproj" --configuration Release -p:Version=1.0.$(Build.BuildNumber)
             for see all predinine azure seach this word in googgle
             note : sett pathproject in C:\agent\_work\1\s\ClassLibrary1
-            
+
+    for make nuget package from my project
+        1- download nuget.exe & copy To c:\agent
+        2- add task in job kind powershell -> inline -> $(Agent.HomeDirectory)\nuget\nuget.exe pack "$(Build.SourcesDirectory)\ClassLibrary1\ClassLibrary1.csproj" -OutputDirectory $(Build.SourcesDirectory)\Output\nugetPack\ClassLibrary1 -Properties Configuration=Release -Version4.0.$(Build.BuildNumber)
+        
+        
         
