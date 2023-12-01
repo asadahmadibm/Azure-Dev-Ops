@@ -32,8 +32,10 @@
         cmd : .\config.cmd
         cmd : .\run.cmd
     
-    agent pool
-    make without yaml
-    1-other git
-    2- 
+    new pipline
+    for make without yaml
+        1-other git
+        2- continue 
+        3- emplty job
+        4- save & run
 
