@@ -20,9 +20,17 @@
     push
 
         
-    127.0.0.1
-    asadahmadibm
-    project setting
+    new pipline
+    other git
+    empty job
+    add new agent 
+    goto project setting -> Agent Pool  -> default -> new agent
+        download agent
+        make directory agent -> cd agent
+        cmd : Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$HOME\Downloads\vsts-agent-win-x64-2.213.2.zip", "$PWD")
+        cmd : .\config.cmd
+        cmd : .\run.cmd
+    
     agent pool
     make without yaml
     1-other git
