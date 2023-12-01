@@ -9,6 +9,16 @@
         d- accout for azure devops  note : math with active directory
         e- edit ip and port for site setting
         f- add user for azure service
+
+
+    new project
+    copy repo link
+    make directory in local
+    cmd : git clone Linkaddress
+    open vs
+    new class library
+    push
+
         
     127.0.0.1
     asadahmadibm
