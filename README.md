@@ -39,3 +39,5 @@
         3- emplty job
         4- save & run
 
+        5- download .net 8 binary -> extract & copy to agent Directory
+
