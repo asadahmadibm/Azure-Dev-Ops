@@ -47,6 +47,8 @@
     for make nuget package from my project
         1- download nuget.exe & copy To c:\agent
         2- add task in job kind powershell -> inline -> $(Agent.HomeDirectory)\nuget\nuget.exe pack "$(Build.SourcesDirectory)\ClassLibrary1\ClassLibrary1.csproj" -OutputDirectory $(Build.SourcesDirectory)\Output\nugetPack\ClassLibrary1 -Properties Configuration=Release -Version4.0.$(Build.BuildNumber)
+
+        to copy Copy-Item -Path C:\agent\_work\3\s\ConsoleApp1\bin\Debug -Destination C:\Backup -Recurse
         
         
         
