@@ -50,5 +50,32 @@
 
         to copy Copy-Item -Path C:\agent\_work\3\s\ConsoleApp1\bin\Debug -Destination C:\Backup -Recurse
         
+ new pipline for .netframework 4.8
+    for make without yaml
+        1-other git
+        2- continue 
+        3- emplty job
+        4- save & run        
+
+        5- make msbuild job
+        6- make powershell
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\App_Code" -Destination C:\publish_Azure$(Build.BuildNumber)\\App_Code -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Areas" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\assets" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\bin" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\BourseReports" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Content" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\css" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\fonts" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Images" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Plugins" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Scripts" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Templates" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Views" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\wwwroot" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\favicon.ico" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Global.asax" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+            Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\libman.json" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+
         
         
