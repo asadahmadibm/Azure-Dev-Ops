@@ -19,6 +19,8 @@
     open vs
     new class library
     push
+    or
+    
 
         
     new pipline
@@ -58,24 +60,14 @@
             4- save & run        
 
             5- make msbuild job
-            6- make powershell
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\App_Code" -Destination C:\publish_Azure$(Build.BuildNumber)\\App_Code -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Areas" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\assets" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\bin" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\BourseReports" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Content" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\css" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\fonts" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Images" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Plugins" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Scripts" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Templates" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Views" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\wwwroot" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\favicon.ico" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\Global.asax" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
-                Copy-Item -Path "$(Build.SourcesDirectory)\IfbBrokersWebsite\libman.json" -Destination C:\publish_Azure$(Build.BuildNumber) -Recurse
+
+    new realease
+        1- add stage1 with IIS website and SQL database deployment
+        2- add artifact by pipline defined in step top
+        3- define Website name & Add bindings & Application pool name
+        4- add Deployment group in iis deployment similar job
+        
+        
 
         
         
